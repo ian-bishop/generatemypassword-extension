@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GenerateMyPassword Small Promo Tile</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 440px; height: 280px; margin: 0; overflow: hidden; }
+    body {
+      position: relative;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background:
+        radial-gradient(circle at 85% 18%, rgba(121, 221, 206, .38), transparent 125px),
+        radial-gradient(circle at 12% 92%, rgba(121, 144, 255, .5), transparent 150px),
+        linear-gradient(135deg, #18399c, #2d62e6 58%, #174a91);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body::before, body::after {
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 50%;
+      content: "";
+    }
+    body::before { width: 250px; height: 250px; top: -138px; right: -62px; }
+    body::after { width: 210px; height: 210px; bottom: -132px; left: -66px; }
+    main { position: relative; z-index: 1; display: grid; justify-items: center; gap: 12px; text-align: center; }
+    img { width: 82px; height: 82px; border-radius: 18px; box-shadow: 0 16px 30px rgba(6, 20, 66, .28); }
+    h1 { margin: 0; font-size: 28px; line-height: 1; letter-spacing: -.8px; }
+    p { margin: 0; color: rgba(255,255,255,.86); font-size: 14px; font-weight: 650; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="../../icons/icon128.png" alt="">
+    <h1>GenerateMyPassword</h1>
+    <p>Secure passwords. Private by design.</p>
+  </main>
+</body>
+</html>
