@@ -1,5 +1,7 @@
 # GenerateMyPassword Chrome Extension
 
+**Official website:** [GenerateMyPassword.com](https://generatemypassword.com/) · **Source code:** [GitHub](https://github.com/ian-bishop/generatemypassword-extension) · **Privacy policy:** [Chrome extension privacy](https://generatemypassword.com/privacy/)
+
 Generate secure random passwords and EFF Diceware passphrases directly in a Chrome extension popup. Generation happens locally with the Web Crypto API; the extension has no accounts, analytics, advertisements, network services, or password history.
 
 ## Features
@@ -10,6 +12,12 @@ Generate secure random passwords and EFF Diceware passphrases directly in a Chro
 - Bundled 7,776-word [EFF Large Wordlist](https://www.eff.org/dice)
 - Local preference storage without storing generated values
 - Manifest V3 with no requested extension permissions
+
+## Password security resources
+
+For browser-based password generation without installing an extension, visit [GenerateMyPassword.com](https://generatemypassword.com/). For an independent, minimal HTML/CSS/JavaScript demonstration, see the [Strong Password Generator project](https://github.com/ian-bishop/strong-password-generator).
+
+The extension's random passwords use the Web Crypto API. Diceware-style passphrases use the bundled [EFF Large Wordlist](https://www.eff.org/dice). The strength estimates presume the generator selects characters or words randomly and independently; they do not describe the strength of human-chosen passwords.
 
 ## Install for development
 
@@ -39,6 +47,12 @@ zip -r generatemypassword-extension-v1.2.0.zip \
 ```
 
 Do not include development tools or repository metadata in the Chrome Web Store upload.
+
+## Contributing and security reports
+
+Bug reports and documentation improvements are welcome through [GitHub Issues](https://github.com/ian-bishop/generatemypassword-extension/issues). For safe, reproducible contributions, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Please avoid posting real passwords, account credentials, recovery codes, or sensitive personal information in public issues. If you find a vulnerability, see [SECURITY.md](SECURITY.md) before sharing details publicly.
 
 ## Privacy
 
